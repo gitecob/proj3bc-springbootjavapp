@@ -9,7 +9,7 @@ pipeline {
     }
 
     environment {
-        TENANT_ID="ec78375d-0db0-42cf-82a6-2e6403e95936"
+        TENANT_ID="6cd074d3-8bf8-4855-bd5a-ebea6660201c"
         IMAGE_NAME = "sprinbootapp"
         IMAGE_TAG = "latest"
         
@@ -19,7 +19,7 @@ pipeline {
         stage('Check Out from Git') 
         {
             steps {
-                git branch: 'prod' , url: 'https://github.com/bkrrajmali/azure-evening-springbootjavapp.git'
+                git branch: 'prod' , url: 'https://github.com/gitecob/proj3bc-springbootjavapp.git'
             }
         }
 
